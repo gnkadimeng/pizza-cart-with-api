@@ -1,0 +1,58 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.pizzas{
+width: 23%;
+
+padding: 1.5rem;
+justify-content: space-around;
+display: flex;
+background-color: rgb(217, 212, 202);
+flex-wrap: wrap;
+}
+#pizza {
+    box-shadow: 0 0 4px 3px white;
+    background-color: rgb(255, 111, 0);
+    padding: 1.5em;
+    margin-bottom: 2em;
+    flex-wrap: wrap;
+}
+
+#pi {
+    box-shadow: 0 0 4px 3px white;
+    background-color: rgb(255, 111, 0);
+    padding: 1.5em;
+    margin-bottom: 2em;
+    flex-wrap: wrap;
+}
+
+.price, .type, .flavour {
+    color: aliceblue;
+    text-transform: capitalize;
+}
+
+.size {
+    font-size: large;
+    text-transform: capitalize;
+    margin: 1px;
+    font-weight: bold;
+    color: aliceblue;
+}
+.images {
+    width: 80%;
+}
+
+.btn {
+    background-color: #080705; /* Green */
+    border: none;
+    color: white;
+    padding: 10px 22px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    
+}

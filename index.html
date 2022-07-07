@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/alpinejs" defer></script>
+    
+
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="csssty.css">
+<body>
+
+    <div class="container" x-data="{
+        showCart: false,
+        size:'',
+        price: 0,
+    }">
+    <div x-text="price"></div>
+    <button x-on:click="    " >ADD</button>
+        <div class="pizzas">
+            <div id="pizza">
+                <img class="images" src="pizza-size.png" alt="">
+                <p class="size">size</p>
+                <p class="type">type</p>
+                <p class="flavour">flavour</p>
+                <p x-model="price" class="price">R price</p>
+                <br>
+                <button x-on:click="showCart = true" class="btn">Order</button>
+            
+               </div>
+        </div>
+
+        <div class="ps" x-show="showCart">
+            <div id="pi">
+                <!-- <img class="images" src="pizza-size.png" alt=""> -->
+                <p x-text="size" class="size">size</p>
+                <p class="type">type</p>
+                <p class="flavour">flavour</p>
+                <p x-text="price" class="price">R price</p>
+              
+                <button x-on:click="price +=" class="btn">Plus</button> 
+            
+               </div>
+        </div>
+    </div>
+    <!-- cart -->
+    
+
+    <script src="scrpt.js"></script>
+
+
+   
+    
+    
+</body>
+</html>
