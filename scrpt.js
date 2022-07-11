@@ -49,4 +49,3 @@ fetch('https://pizza-cart-api.herokuapp.com/api/pizzas').then((data) => {
 }).catch((err) => {
     console.log(err);
 })
-
